@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="فروشگاه میلاد؛ محصولات چوبی دست‌ساز برای خانه‌ای گرم و اصیل">
+  <title>فروشگاه میلاد | محصولات چوبی دست‌ساز</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="صفحه اصلی فروشگاه میلاد">
+        <span class="brand-mark">م</span>
+        <span><strong>فروشگاه میلاد</strong><small>گرمای چوب، برای خانه شما</small></span>
+      </a>
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <a href="#home">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#story">داستان ما</a>
+        <a href="#contact">تماس با ما</a>
+      </nav>
+      <button class="cart-button" id="openCart" type="button" aria-label="باز کردن سبد خرید">
+        <span class="cart-icon">🛒</span>
+        <span>سبد خرید</span>
+        <b id="cartCount">۰</b>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow light">ساخته‌شده با عشق، از دل طبیعت</span>
+        <h1>چوب را به <em>خاطره‌ای ماندگار</em> تبدیل می‌کنیم</h1>
+        <p>محصولات چوبی دست‌ساز میلاد، ترکیبی از اصالت، دوام و زیبایی طبیعی برای لحظه‌های خاص زندگی شماست.</p>
+        <a class="primary-button" href="#products">مشاهده محصولات <span>←</span></a>
+      </div>
+      <div class="hero-note"><span>✦</span> هر رگه، داستانی از طبیعت</div>
+    </section>
+
+    <section class="intro-section container" id="story">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=900&q=85" alt="بافت طبیعی و گرم چوب">
+        <div class="experience-badge"><strong>۱۲</strong><span>سال تجربه<br>در هنر چوب</span></div>
+      </div>
+      <div class="intro-copy">
+        <span class="eyebrow">داستان فروشگاه میلاد</span>
+        <h2>سادگی طبیعت، <br><em>هنر دست انسان</em></h2>
+        <p>ما باور داریم هر خانه با یک تکه چوب جان می‌گیرد. در کارگاه میلاد، چوب‌های اصیل را با دقت انتخاب می‌کنیم و با دست‌های هنرمندمان به وسایلی کاربردی و زیبا تبدیل می‌کنیم.</p>
+        <p>تمام محصولات با روکش‌های طبیعی و سازگار با محیط زیست ساخته شده‌اند تا زیبایی‌شان در گذر زمان بیشتر شود.</p>
+        <a class="text-link" href="#products">بیشتر درباره ما <span>←</span></a>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">انتخابی برای هر سلیقه</span><h2>محصولات محبوب ما</h2></div>
+          <p>چیزهایی که با دقت ساخته شده‌اند<br>تا هر روز از داشتنشان لذت ببرید.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="دسته‌بندی محصولات">
+          <button class="filter-btn active" data-filter="all">همه محصولات</button>
+          <button class="filter-btn" data-filter="kitchen">آشپزخانه</button>
+          <button class="filter-btn" data-filter="decor">دکوراسیون</button>
+          <button class="filter-btn" data-filter="furniture">مبلمان</button>
+          <button class="filter-btn" data-filter="gift">هدیه</button>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="furniture" data-id="1" data-name="میز عسلی بلوط" data-price="1850000" data-image="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=700&q=85">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=700&q=85" alt="میز عسلی چوبی بلوط" loading="lazy"><span class="product-tag">محبوب</span><button class="quick-add" data-add="1" aria-label="افزودن میز عسلی به سبد">+</button></div>
+            <div class="product-info"><span class="product-category">مبلمان</span><h3>میز عسلی بلوط</h3><p>ساخته‌شده از چوب بلوط طبیعی با طراحی مینیمال</p><div class="product-bottom"><strong>۱,۸۵۰,۰۰۰ <small>تومان</small></strong><button class="add-button" data-add="1">افزودن به سبد</button></div></div>
+          </article>
+          <article class="product-card" data-category="kitchen" data-id="2" data-name="تخته سرو گردو" data-price="690000" data-image="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85" alt="تخته سرو چوب گردو" loading="lazy"><span class="product-tag new">تازه رسیده</span><button class="quick-add" data-add="2" aria-label="افزودن تخته سرو به سبد">+</button></div>
+            <div class="product-info"><span class="product-category">آشپزخانه</span><h3>تخته سرو گردو</h3><p>یک انتخاب شیک برای سرو پنیر، میوه و مزه‌ها</p><div class="product-bottom"><strong>۶۹۰,۰۰۰ <small>تومان</small></strong><button class="add-button" data-add="2">افزودن به سبد</button></div></div>
+          </article>
+          <article class="product-card" data-category="decor" data-id="3" data-name="چراغ رومیزی چوبی" data-price="1240000" data-image="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85" alt="چراغ رومیزی با پایه چوبی" loading="lazy"><button class="quick-add" data-add="3" aria-label="افزودن چراغ رومیزی به سبد">+</button></div>
+            <div class="product-info"><span class="product-category">دکوراسیون</span><h3>چراغ رومیزی چوبی</h3><p>نور گرم و آرامش‌بخش برای گوشه دنج خانه شما</p><div class="product-bottom"><strong>۱,۲۴۰,۰۰۰ <small>تومان</small></strong><button class="add-button" data-add="3">افزودن به سبد</button></div></div>
+          </article>
+          <article class="product-card" data-category="gift" data-id="4" data-name="جعبه یادگاری چوبی" data-price="820000" data-image="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=700&q=85">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=700&q=85" alt="جعبه یادگاری چوبی" loading="lazy"><span class="product-tag">هدیه خاص</span><button class="quick-add" data-add="4" aria-label="افزودن جعبه یادگاری به سبد">+</button></div>
+            <div class="product-info"><span class="product-category">هدیه</span><h3>جعبه یادگاری چوبی</h3><p>برای نگهداری نامه‌ها و خاطرات ارزشمند شما</p><div class="product-bottom"><strong>۸۲۰,۰۰۰ <small>تومان</small></strong><button class="add-button" data-add="4">افزودن به سبد</button></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits"><div class="container benefits-grid">
+      <div class="benefit"><span>✦</span><div><h3>ساخت دست‌ساز</h3><p>هر محصول با دقت و عشق ساخته می‌شود.</p></div></div>
+      <div class="benefit"><span>♧</span><div><h3>چوب اصیل و طبیعی</h3><p>انتخاب بهترین متریال از طبیعت.</p></div></div>
+      <div class="benefit"><span>⌁</span><div><h3>ارسال سریع و مطمئن</h3><p>بسته‌بندی ایمن تا رسیدن به دستان شما.</p></div></div>
+      <div class="benefit"><span>♡</span><div><h3>پشتیبانی همیشگی</h3><p>همراه شما برای یک انتخاب خوب.</p></div></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer" id="contact"><div class="container footer-grid">
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">م</span><span><strong>فروشگاه میلاد</strong><small>گرمای چوب، برای خانه شما</small></span></a><p>با عشق به طبیعت و هنر دست، برای خانه‌های شما می‌سازیم.</p></div>
+    <div><h3>دسترسی سریع</h3><a href="#products">محصولات</a><a href="#story">داستان ما</a><a href="#contact">پرسش‌های متداول</a></div>
+    <div><h3>ارتباط با ما</h3><a href="tel:02188445566">۰۲۱-۸۸۴۴۵۵۶۶</a><a href="mailto:hello@miladwood.ir">hello@miladwood.ir</a><span>تهران، خیابان ولیعصر</span></div>
+    <div><h3>ما را دنبال کنید</h3><p>برای دیدن پشت صحنه ساخت محصولات همراه ما باشید.</p><div class="socials"><a href="#" aria-label="اینستاگرام">◎</a><a href="#" aria-label="تلگرام">◈</a><a href="#" aria-label="واتساپ">◌</a></div></div>
+  </div><div class="footer-bottom container"><span>© ۱۴۰۳ فروشگاه میلاد؛ تمامی حقوق محفوظ است.</span><span>ساخته‌شده با عشق به چوب</span></div></footer>
+
+  <div class="modal-backdrop" id="cartModal" aria-hidden="true"><aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="cart-header"><div><span class="eyebrow">خرید شما</span><h2 id="cartTitle">سبد خرید</h2></div><button class="close-cart" id="closeCart" aria-label="بستن سبد خرید">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="total-row"><span>مجموع سفارش</span><strong id="cartTotal">۰ تومان</strong></div><button class="checkout-button" type="button">ادامه فرایند خرید <span>←</span></button><p class="secure-note">✦ پرداخت امن و ارسال به سراسر کشور</p></div></aside></div>
+  <div class="toast" id="toast">محصول به سبد خرید اضافه شد</div>
+  <script src="script.js"></script>
+</body>
+</html>
