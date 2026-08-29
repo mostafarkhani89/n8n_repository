@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="کفشینو؛ فروشگاه دمو کفش‌های راحت و مدرن">
+  <title>کفشینو | فروشگاه کفش</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ارسال رایگان برای سفارش‌های بالای ۲ میلیون تومان <span>✦</span> ضمانت بازگشت ۷ روزه</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منوی موبایل" aria-expanded="false">☰</button>
+      <a class="brand" href="#top" aria-label="صفحه اصلی کفشینو"><span class="brand-mark">ک</span><span>کفشینو</span></a>
+      <nav class="desktop-nav" id="mainNav" aria-label="منوی اصلی">
+        <a class="active" href="#top">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#special">پیشنهاد ویژه</a>
+        <a href="#about">درباره ما</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" aria-label="باز کردن جست‌وجو">⌕</button>
+        <button class="cart-button" id="cartOpen" aria-label="باز کردن سبد خرید"><span>سبد خرید</span><b id="cartCount">۰</b></button>
+      </div>
+    </div>
+    <div class="search-row container" id="searchRow" hidden>
+      <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="جست‌وجوی مدل، برند یا دسته‌بندی..." aria-label="جست‌وجوی محصولات"><button id="searchClose" aria-label="بستن جست‌وجو">×</button></label>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">کالکشن جدید بهار</p>
+        <h1>قدم‌هایت را با<br><em>استایل</em> تازه بردار</h1>
+        <p class="hero-text">کفش‌هایی برای تمام لحظه‌های زندگی؛ ترکیبی از طراحی روز، راحتی واقعی و کیفیتی که به آن اعتماد می‌کنید.</p>
+        <a class="primary-button" href="#products">خرید کالکشن جدید <span>←</span></a>
+        <div class="hero-stats"><span><strong>+۵۰</strong> مدل جدید</span><span><strong>۷ روز</strong> ضمانت بازگشت</span></div>
+      </div>
+      <div class="hero-visual" aria-label="کفش اسپرت سفید و نارنجی"><div class="shoe-shape">SNEAK<br><b>ERS</b></div><span class="hero-badge">راحتی<br><strong>هر قدم</strong></span></div>
+    </section>
+
+    <section class="benefits"><div class="container benefit-grid"><div><span>🚚</span><p><b>ارسال سریع</b><small>تحویل در ۲ تا ۳ روز کاری</small></p></div><div><span>↺</span><p><b>ضمانت بازگشت</b><small>تا ۷ روز بدون دردسر</small></p></div><div><span>✓</span><p><b>ضمانت اصالت</b><small>محصولات اصل و باکیفیت</small></p></div><div><span>☎</span><p><b>پشتیبانی همیشگی</b><small>هر روز از ۹ تا ۲۱</small></p></div></div></section>
+
+    <section class="container category-section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">انتخاب بر اساس سبک</p><h2>دسته‌بندی محصولات</h2></div><a href="#products">مشاهده همه ←</a></div>
+      <div class="category-grid">
+        <button class="category-card category-one" data-category="اسپرت"><span>کفش اسپرت</span><small>برای روزهای پرتحرک</small></button>
+        <button class="category-card category-two" data-category="روزمره"><span>کفش روزمره</span><small>راحتی در تمام روز</small></button>
+        <button class="category-card category-three" data-category="رسمی"><span>کفش رسمی</span><small>استایل حرفه‌ای</small></button>
+        <button class="category-card category-four" data-category="بوت"><span>بوت و نیم‌بوت</span><small>همراه روزهای سرد</small></button>
+      </div>
+    </section>
+
+    <section class="container products-section" id="products">
+      <div class="section-heading product-heading"><div><p class="eyebrow">پرفروش‌ترین‌ها</p><h2>مدل‌های محبوب</h2></div><div class="filters"><select id="categoryFilter" aria-label="فیلتر دسته‌بندی"><option value="همه">همه دسته‌ها</option><option value="اسپرت">اسپرت</option><option value="روزمره">روزمره</option><option value="رسمی">رسمی</option><option value="بوت">بوت و نیم‌بوت</option></select><select id="sortFilter" aria-label="مرتب‌سازی"><option value="default">مرتب‌سازی</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option></select></div></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-results" id="emptyResults" hidden><span>⌕</span><h3>محصولی پیدا نشد</h3><p>عبارت جست‌وجو یا فیلتر دیگری را امتحان کنید.</p></div>
+    </section>
+
+    <section class="special container" id="special"><div><p class="eyebrow">پیشنهاد محدود این هفته</p><h2>برای قدم‌های خاص،<br>انتخابی خاص داشته باش</h2><p>با کد <b>STEP20</b> بیست درصد تخفیف بگیر.</p><a class="light-button" href="#products">مشاهده پیشنهادها</a></div><div class="special-shoe">20<span>%</span><small>تخفیف</small></div></section>
+    <section class="about container" id="about"><div class="about-mark">ک</div><div><p class="eyebrow">داستان کفشینو</p><h2>راحتی، از اولین قدم شروع می‌شود</h2><p>ما در کفشینو باور داریم کفش خوب فقط ظاهر زیبا نیست؛ باید همراه قابل اعتماد روزهای شما باشد. هر مدل با وسواس انتخاب شده تا کیفیت و استایل را کنار هم تجربه کنید.</p></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><a class="brand" href="#top"><span class="brand-mark">ک</span><span>کفشینو</span></a><p>قدم‌های بهتر، روزهای بهتر.</p></div><div><h4>خدمات مشتریان</h4><a href="#about">راهنمای خرید</a><a href="#about">شرایط بازگشت</a></div><div><h4>ارتباط با ما</h4><p>۰۲۱-۱۲۳۴۵۶۷۸<br>hello@kafshino.ir</p></div><div><h4>ما را دنبال کنید</h4><p>اینستاگرام　 تلگرام</p></div></div><div class="copyright">© ۱۴۰۳ کفشینو — تمامی حقوق محفوظ است.</div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><h2>سبد خرید</h2><button id="cartClose" aria-label="بستن سبد خرید">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>سبد خرید خالی است</h3><p>مدل مورد علاقه‌تان را به سبد اضافه کنید.</p></div><div class="cart-footer" id="cartFooter"><div><span>مجموع</span><strong id="cartTotal">۰ تومان</strong></div><button class="primary-button checkout" type="button">ادامه ثبت سفارش <span>←</span></button><small>پرداخت در این نسخه آزمایشی فعال نیست.</small></div></aside><div class="overlay" id="overlay"></div><div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
