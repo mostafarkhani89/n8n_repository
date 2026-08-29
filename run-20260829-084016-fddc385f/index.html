@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="نقشینه؛ مجموعه‌ای برای تماشای آثار هنری دست‌ساز و اصیل ایرانی">
+  <title>نقشینه | خانه هنرهای دست‌ساز</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="نقشینه، صفحه اصلی">
+        <span class="brand-mark" aria-hidden="true">ن</span>
+        <span>
+          <strong>نقشینه</strong>
+          <small>روایت هنرهای ماندگار</small>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">منو <span aria-hidden="true">☰</span></button>
+      <nav id="main-nav" class="main-nav" aria-label="ناوبری اصلی">
+        <a href="#gallery">گالری آثار</a>
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#story">داستان ما</a>
+        <a href="#contact">ارتباط با ما</a>
+      </nav>
+      <a class="header-note" href="#contact">بازدید از مجموعه <span aria-hidden="true">←</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> انتخابی از دل کارگاه‌های ایرانی</p>
+        <h1 id="hero-title">هنر، وقتی<br><em>قصه‌ای برای گفتن</em> دارد.</h1>
+        <p class="hero-text">نقشینه جایی‌ست برای تماشای دست‌ساخته‌هایی که با حوصله، خاک، رنگ و عشق شکل گرفته‌اند؛ آثاری برای زیباتر کردن لحظه‌های روزمره.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gallery">تماشای آثار <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#story">بیشتر درباره نقشینه <span aria-hidden="true">←</span></a>
+        </div>
+        <div class="hero-stats" aria-label="اطلاعات مجموعه">
+          <div><strong>+۸۰</strong><span>اثر منتخب</span></div>
+          <div><strong>۲۴</strong><span>هنرمند همراه</span></div>
+          <div><strong>۱۰</strong><span>سال روایت هنر</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="تصویری از یک ظرف سفالی دست‌ساز">
+        <div class="sun-shape"></div>
+        <div class="hero-image-wrap">
+          <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1000&q=85" alt="ظرف سرامیکی دست‌ساز با لعاب طبیعی" onerror="this.style.display='none'">
+        </div>
+        <div class="floating-label"><span>۰۱</span><b>لمس خاک</b><small>سرامیک دست‌ساز</small></div>
+        <span class="art-stamp" aria-hidden="true">HAND<br>MADE</span>
+      </div>
+    </section>
+
+    <section id="categories" class="categories section container" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> جست‌وجو در جهان نقشینه</p><h2 id="categories-title">هر اثر، یک حال‌وهوا</h2></div>
+        <p>از نقش‌های کهن تا فرم‌های امروزی، مجموعه‌ای برای سلیقه‌های آرام و کنجکاو.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-ceramic" href="#gallery" data-filter-link="سرامیک"><span>۰۱</span><h3>سرامیک</h3><small>فرم‌هایی از خاک و آتش</small><b aria-hidden="true">↗</b></a>
+        <a class="category-card category-textile" href="#gallery" data-filter-link="بافت"><span>۰۲</span><h3>بافت و پارچه</h3><small>گرمای دست، رنگ زندگی</small><b aria-hidden="true">↗</b></a>
+        <a class="category-card category-print" href="#gallery" data-filter-link="چاپ هنری"><span>۰۳</span><h3>چاپ هنری</h3><small>روایت‌هایی روی کاغذ</small><b aria-hidden="true">↗</b></a>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section container" aria-labelledby="gallery-title">
+      <div class="section-heading gallery-heading">
+        <div><p class="eyebrow"><span></span> ویترین این ماه</p><h2 id="gallery-title">آثار منتخب</h2></div>
+        <div class="filter-list" role="group" aria-label="فیلتر دسته‌بندی آثار">
+          <button class="filter-button is-active" type="button" data-filter="all">همه آثار</button>
+          <button class="filter-button" type="button" data-filter="سرامیک">سرامیک</button>
+          <button class="filter-button" type="button" data-filter="بافت">بافت</button>
+          <button class="filter-button" type="button" data-filter="چاپ هنری">چاپ هنری</button>
+        </div>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="سرامیک">
+          <div class="product-image"><span class="product-badge">تازه</span><img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=85" alt="گلدان سرامیکی کرم‌رنگ با فرم موج‌دار" onerror="this.style.display='none'"></div>
+          <div class="product-info"><div><p>سرامیک</p><h3>گلدان موج آرام</h3></div><strong>۱,۸۵۰,۰۰۰ <small>تومان</small></strong></div>
+          <p class="product-description">ساخته‌شده با دست و لعاب مات، برای گوشه‌ای که به آرامش نیاز دارد.</p>
+        </article>
+        <article class="product-card" data-category="بافت">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&w=800&q=85" alt="کوسن بافته‌شده با طرح هندسی و رنگ‌های خاکی" onerror="this.style.display='none'"></div>
+          <div class="product-info"><div><p>بافت و پارچه</p><h3>کوسن نقش کویر</h3></div><strong>۹۸۰,۰۰۰ <small>تومان</small></strong></div>
+          <p class="product-description">بافته‌شده از الیاف طبیعی با ترکیبی گرم از رنگ‌های خاک و آفتاب.</p>
+        </article>
+        <article class="product-card" data-category="چاپ هنری">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=85" alt="چاپ هنری انتزاعی با رنگ‌های نارنجی و آبی" onerror="this.style.display='none'"></div>
+          <div class="product-info"><div><p>چاپ هنری</p><h3>خطوط آفتاب</h3></div><strong>۶۵۰,۰۰۰ <small>تومان</small></strong></div>
+          <p class="product-description">چاپ محدود روی کاغذ پنبه‌ای؛ تکه‌ای از یک صبح روشن برای دیوار شما.</p>
+        </article>
+        <article class="product-card" data-category="سرامیک">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?auto=format&fit=crop&w=800&q=85" alt="فنجان سرامیکی دست‌ساز به رنگ سبز زیتونی" onerror="this.style.display='none'"></div>
+          <div class="product-info"><div><p>سرامیک</p><h3>فنجان سبز زیتونی</h3></div><strong>۴۸۰,۰۰۰ <small>تومان</small></strong></div>
+          <p class="product-description">همراهی ساده برای چای عصرانه؛ هر فنجان با تفاوتی کوچک و دوست‌داشتنی.</p>
+        </article>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>در این دسته اثر دیگری برای نمایش نداریم.</p>
+    </section>
+
+    <section id="story" class="story section">
+      <div class="container story-inner">
+        <div class="story-image"><img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1000&q=85" alt="دست‌های هنرمند در حال ساخت یک اثر سفالی" onerror="this.style.display='none'"><span>از دست<br>به خانه</span></div>
+        <div class="story-copy"><p class="eyebrow"><span></span> درباره نقشینه</p><h2>چیزهایی که آهسته ساخته می‌شوند، ماندگارترند.</h2><p>ما هنرمندان مستقل را پیدا می‌کنیم، داستانشان را می‌شنویم و آثارشان را با شما به اشتراک می‌گذاریم. نقشینه یک ویترین آنلاین است؛ برای شناختن، الهام گرفتن و نزدیک‌تر شدن به هنر اصیل.</p><a class="button button-dark" href="#contact">آشنایی با هنرمندان <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">ن</span><span><strong>نقشینه</strong><small>روایت هنرهای ماندگار</small></span></a><p>برای دیدن زیبایی‌های دست‌ساز، همین‌جا بمانید.</p></div>
+      <div><h3>در تماس باشیم</h3><a href="mailto:hello@nagshineh.ir">hello@nagshineh.ir</a><a href="tel:+982112345678">۰۲۱ - ۱۲۳۴۵۶۷۸</a></div>
+      <div><h3>ما را دنبال کنید</h3><div class="social-links"><a href="#contact" aria-label="اینستاگرام">اینستاگرام</a><a href="#contact" aria-label="پینترست">پینترست</a></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© ۱۴۰۳ نقشینه، همه حقوق محفوظ است.</span><span>ساخته‌شده با عشق به هنر</span></div>
+  </footer>
+</body>
+</html>
