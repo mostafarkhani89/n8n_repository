@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="فروشگاه آنلاین لوازم بهداشتی نیکا با محصولات مراقبت از پوست، مو و دهان و دندان">
+  <title>نیکا | فروشگاه لوازم بهداشتی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>ارسال رایگان برای سفارش‌های بالای ۷۰۰ هزار تومان</span>
+      <span class="topbar-link">پشتیبانی: ۰۲۱-۱۲۳۴۵۶۷۸</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="صفحه اصلی نیکا">
+        <span class="brand-mark">ن</span>
+        <span><strong>نیکا</strong><small>زیبایی و سلامت</small></span>
+      </a>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="جست‌وجوی محصول، برند یا دسته‌بندی..." aria-label="جست‌وجوی محصول">
+      </div>
+      <div class="header-actions">
+        <button class="account-button" type="button" aria-label="ورود به حساب کاربری"><span>♙</span><b>حساب کاربری</b></button>
+        <button class="cart-button" id="cartButton" type="button" aria-label="مشاهده سبد خرید"><span class="cart-icon">🛒</span><span class="cart-label">سبد خرید</span><i id="cartCount">۰</i></button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="منوی اصلی">
+      <div class="container nav-inner">
+        <a class="active" href="#home">خانه</a>
+        <a href="#products">همه محصولات</a>
+        <a href="#products" data-category-link="پوست">مراقبت از پوست</a>
+        <a href="#products" data-category-link="مو">مراقبت از مو</a>
+        <a href="#products" data-category-link="دهان و دندان">دهان و دندان</a>
+        <a href="#products" data-category-link="بهداشت شخصی">بهداشت شخصی</a>
+        <a href="#offers" class="sale-link">پیشنهادهای ویژه <span>٪</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">مراقبت روزانه، حال خوب همیشگی</span>
+        <h1>زیبایی و سلامت<br><em>از انتخاب‌های کوچک</em></h1>
+        <p>محصولات بهداشتی باکیفیت را با خیال راحت انتخاب کنید و در کوتاه‌ترین زمان درب منزل تحویل بگیرید.</p>
+        <a class="primary-button" href="#products">مشاهده محصولات <span>←</span></a>
+        <div class="hero-features"><span>✓ ضمانت اصالت کالا</span><span>✓ ارسال سریع</span></div>
+      </div>
+      <div class="hero-art" aria-label="محصولات مراقبت از پوست">
+        <div class="blob"></div>
+        <div class="hero-bottle bottle-one"><span>n</span><small>CARE</small></div>
+        <div class="hero-bottle bottle-two"><span>n</span><small>PURE</small></div>
+        <div class="hero-leaf leaf-one">⌁</div><div class="hero-leaf leaf-two">⌁</div>
+        <div class="hero-sticker">طبیعی<br><strong>و سالم</strong></div>
+      </div>
+    </section>
+
+    <section class="category-strip container" aria-label="دسته‌بندی‌ها">
+      <a href="#products" data-category-link="پوست"><span class="category-icon pink">◌</span><b>مراقبت از پوست</b><small>۱۲۴ محصول</small></a>
+      <a href="#products" data-category-link="مو"><span class="category-icon green">♧</span><b>مراقبت از مو</b><small>۸۶ محصول</small></a>
+      <a href="#products" data-category-link="دهان و دندان"><span class="category-icon blue">✦</span><b>دهان و دندان</b><small>۴۸ محصول</small></a>
+      <a href="#products" data-category-link="بهداشت شخصی"><span class="category-icon orange">♡</span><b>بهداشت شخصی</b><small>۷۲ محصول</small></a>
+    </section>
+
+    <section class="products-section container" id="products">
+      <div class="section-heading"><div><span class="eyebrow">انتخابی برای شما</span><h2>محبوب‌ترین محصولات</h2></div><a href="#products" id="clearFilters">مشاهده همه <span>←</span></a></div>
+      <div class="toolbar">
+        <div class="filter-tabs" role="tablist" aria-label="فیلتر دسته‌بندی"><button class="filter-tab active" data-category="همه">همه</button><button class="filter-tab" data-category="پوست">مراقبت پوست</button><button class="filter-tab" data-category="مو">مراقبت مو</button><button class="filter-tab" data-category="دهان و دندان">دهان و دندان</button><button class="filter-tab" data-category="بهداشت شخصی">بهداشت شخصی</button></div>
+        <label class="sort-label">مرتب‌سازی:
+          <select id="sortSelect" aria-label="مرتب‌سازی محصولات"><option value="popular">محبوب‌ترین</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option></select>
+        </label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-products" id="emptyProducts" hidden><span>⌕</span><h3>محصولی پیدا نشد</h3><p>عبارت جست‌وجو یا دسته‌بندی دیگری را امتحان کنید.</p></div>
+    </section>
+
+    <section class="offer-banner container" id="offers"><div><span class="eyebrow">پیشنهاد محدود این هفته</span><h2>برای مراقبت از خودت<br><strong>کمتر هزینه کن!</strong></h2><p>تا ۳۰٪ تخفیف روی محصولات منتخب مراقبت از پوست</p><a class="light-button" href="#products">خرید با تخفیف</a></div><div class="offer-circle"><b>۳۰٪</b><span>تخفیف</span></div></section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سبد خرید" aria-hidden="true">
+    <div class="drawer-head"><h2>سبد خرید شما</h2><button id="closeCart" type="button" aria-label="بستن سبد خرید">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div><span>جمع کل</span><strong id="cartTotal">۰ تومان</strong></div><button class="primary-button checkout-button" id="checkoutButton" type="button">ادامه و ثبت سفارش</button><small>پرداخت در این نسخه نمایشی فعال نیست.</small></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">ن</span><span><strong>نیکا</strong><small>زیبایی و سلامت</small></span></a><p>همراه شما برای انتخاب بهتر و زندگی سالم‌تر.</p></div><div><h3>راهنمای خرید</h3><a href="#">نحوه ثبت سفارش</a><a href="#">روش‌های ارسال</a><a href="#">رویه بازگشت کالا</a></div><div><h3>با نیکا</h3><a href="#">درباره ما</a><a href="#">تماس با ما</a><a href="#">سوالات متداول</a></div><div><h3>خبرهای خوب</h3><p>برای اطلاع از تخفیف‌ها عضو خبرنامه شوید.</p><div class="newsletter"><input type="email" placeholder="ایمیل شما"><button type="button">→</button></div></div></div><div class="container copyright">© ۱۴۰۳ فروشگاه نیکا؛ تمامی حقوق محفوظ است.</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

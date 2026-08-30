@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="فروشگاه آنلاین لوازم بهداشتی پاکیزه؛ محصولات مراقبت از پوست و مو با ارسال سریع">
+  <title>پاکیزه | فروشگاه لوازم بهداشتی</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="بازگشت به صفحه اصلی پاکیزه">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span><strong>پاکیزه</strong><small>حال خوبِ مراقبت</small></span>
+      </a>
+      <nav class="main-nav" aria-label="منوی اصلی">
+        <a class="active" href="#products">فروشگاه</a>
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#benefits">چرا پاکیزه؟</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="focusSearch" type="button" aria-label="جست‌وجوی محصول">⌕</button>
+        <button class="cart-button" id="openCart" type="button" aria-label="مشاهده سبد خرید">
+          <span aria-hidden="true">سبد خرید</span><b id="cartCount">۰</b>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">مراقبت روزانه، انتخاب هوشمندانه</span>
+        <h1 id="hero-title">زیبایی و سلامت را<br><em>از خودت شروع کن.</em></h1>
+        <p>محصولات بهداشتی منتخب و مطمئن برای روتین روزانه شما؛ با ارسال سریع و بسته‌بندی دوست‌دار محیط زیست.</p>
+        <a class="primary-button" href="#products">خرید را شروع کنید <span>←</span></a>
+        <div class="hero-note"><span class="avatar-stack"><i>☺</i><i>♥</i><i>✦</i></span><span>بیش از ۲۵۰۰ نفر به پاکیزه اعتماد کرده‌اند</span></div>
+      </div>
+      <div class="hero-art" aria-label="تصویرسازی محصولات مراقبتی" role="img">
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+        <div class="bottle bottle-large"><span>پاکیزه</span><small>SKIN CARE</small></div>
+        <div class="bottle bottle-small"><span>pure</span></div>
+        <div class="soap">✿</div>
+      </div>
+    </section>
+
+    <section class="categories container" id="categories" aria-labelledby="category-title">
+      <div class="section-heading"><div><span class="eyebrow">انتخابی برای هر نیاز</span><h2 id="category-title">دسته‌بندی محصولات</h2></div><a href="#products">مشاهده همه <span>←</span></a></div>
+      <div class="category-grid">
+        <button class="category-card category-skin" data-category="پوست" type="button"><span class="category-icon">◌</span><strong>مراقبت پوست</strong><small>۴۸ محصول</small></button>
+        <button class="category-card category-hair" data-category="مو" type="button"><span class="category-icon">〰</span><strong>مراقبت مو</strong><small>۳۲ محصول</small></button>
+        <button class="category-card category-oral" data-category="دهان و دندان" type="button"><span class="category-icon">♢</span><strong>بهداشت دهان</strong><small>۲۶ محصول</small></button>
+        <button class="category-card category-body" data-category="بدن" type="button"><span class="category-icon">✧</span><strong>مراقبت بدن</strong><small>۳۹ محصول</small></button>
+      </div>
+    </section>
+
+    <section class="products-section container" id="products" aria-labelledby="products-title">
+      <div class="section-heading products-heading"><div><span class="eyebrow">پیشنهادهای محبوب</span><h2 id="products-title">محصولات منتخب</h2></div><div class="product-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="جست‌وجوی محصول..." aria-label="جست‌وجوی محصول"></label><select id="sortSelect" aria-label="مرتب‌سازی محصولات"><option value="featured">مرتب‌سازی: پیشنهادی</option><option value="price-low">ارزان‌ترین</option><option value="price-high">گران‌ترین</option><option value="discount">بیشترین تخفیف</option></select></div></div>
+      <div class="filter-row" role="group" aria-label="فیلتر دسته‌بندی"><button class="filter-button active" data-filter="همه" type="button">همه محصولات</button><button class="filter-button" data-filter="پوست" type="button">پوست</button><button class="filter-button" data-filter="مو" type="button">مو</button><button class="filter-button" data-filter="دهان و دندان" type="button">دهان و دندان</button><button class="filter-button" data-filter="بدن" type="button">بدن</button></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>محصولی پیدا نشد</h3><p>عبارت جست‌وجو یا دسته‌بندی دیگری را امتحان کنید.</p><button class="secondary-button" id="clearFilters" type="button">حذف فیلترها</button></div>
+    </section>
+
+    <section class="benefits container" id="benefits" aria-label="مزایای خرید از پاکیزه"><div><span class="benefit-icon">✓</span><strong>محصولات اصل</strong><small>تضمین اصالت کالا</small></div><div><span class="benefit-icon">↝</span><strong>ارسال سریع</strong><small>ارسال به سراسر کشور</small></div><div><span class="benefit-icon">♡</span><strong>پشتیبانی همیشگی</strong><small>کنار شما هستیم</small></div></section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="سبد خرید" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">انتخاب‌های شما</span><h2>سبد خرید</h2></div><button class="close-button" id="closeCart" type="button" aria-label="بستن سبد خرید">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛍</span><h3>سبد خرید شما خالی است</h3><p>محصولات مورد علاقه‌تان را به سبد اضافه کنید.</p></div>
+    <div class="cart-footer" id="cartFooter"><div class="total-line"><span>مجموع سفارش</span><strong id="cartTotal">۰ تومان</strong></div><button class="primary-button full-button" id="checkoutButton" type="button">ادامه و ثبت سفارش <span>←</span></button><small>پرداخت در این نسخه نمایشی انجام نمی‌شود.</small></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
